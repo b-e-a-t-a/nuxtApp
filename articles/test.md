@@ -1,3 +1,10 @@
+---
+title: 'Mój artykuł'
+imgURL: https://nuxtjs.org/logos/nuxt-icon-white.png
+desc: Test showing loader features
+---
+
+
 # github-markdown-css
 
 > The minimal amount of CSS to replicate the GitHub Markdown style
