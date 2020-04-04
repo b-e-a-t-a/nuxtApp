@@ -25,7 +25,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/scss/main.scss', 'github-markdown-css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -61,7 +61,10 @@ export default {
         test: /\.md$/,
         loader: 'frontmatter-markdown-loader',
         options: {
-          mode: [FMMode.VUE_COMPONENT]
+          mode: [FMMode.VUE_COMPONENT],
+          vue: {
+            root: 'markdown-body'
+          }
         }
       })
     }
